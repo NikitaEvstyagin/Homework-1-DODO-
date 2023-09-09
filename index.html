@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа в Додо Пицце</title>
+    
+    <style>
+        *{margin: 0}
+        @font-face {
+            font-family: Arial, Helvetica, sans-serif;
+            src: url(fonts/DodoRounded_v2-Bold.16f4a88.woff);
+            src: url(fonts/DodoRounded_v2-Medium.bc435e3.woff);
+            src: url(fonts/DodoRounded_v2-Regular.fc64161.woff2);
+        }
+        body{
+            min-width: 320px;
+            max-width: 1360px;
+            font-family: "Dodo Rounded v2",sans-serif;
+            font-size: 22px;
+            line-height: 36px;
+            font-weight: 400;
+            color: #000;
+            margin: 0 auto;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .header  {
+            padding: 48px 40px 24px;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        .btn{
+            font-family: "Dodo Rounded v2",sans-serif;
+            font-size: 22px;
+            line-height: 36px;
+            font-weight: 500;
+            background-color: #efe41a;
+            border-radius: 64px;
+            padding: 10px 20px;
+            margin-right: 30px;
+            
+        }
+        .header-right{
+            display: flex;
+            align-items: center;
+        }
+        .info{
+            margin-top: 20px;
+            display: flex;
+            padding: 0 40px;
+        }
+        .h{
+            width: 640px;
+            padding: 0 40px 0 0;
+            margin-right: 81px ;
+        }
+        .p{
+            width: 474px;
+            font-family: "Dodo Rounded v2",sans-serif;
+            font-size: 22px;
+            line-height: 36px;
+            font-weight: 500;
+            align-items: center;
+        }
+        .title{
+            margin-bottom: 10.6px;
+            font-size: 80px;
+            line-height: 88px;
+            font-weight: 500;
+            z-index: 15;
+            font-family: "Dodo Rounded v2",sans-serif;
+        }
+
+        .mb{
+            height: 688px;
+            width: 1280px;
+            background: orange;
+
+        }
+        .subtitle{
+            font-family: "Dodo Rounded v2",sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 64px;
+            transform: rotate(-2.5deg);
+        }
+        
+        .workplaces{
+            padding: 48px;
+        }
+        .workplaces > p {
+            padding: 0 0 36px;
+        }
+        .workplaces img {
+            width: 206px;
+            height: 268px;
+            border-radius: 26px;
+            
+        }
+
+        article{
+            position:  relative;
+            float: left;
+            margin: 5px;
+        }
+        
+        .profecion{
+            max-width: max-content;
+        }
+        article > div > h3{
+            position: absolute;
+            bottom: 20px;
+            padding: 3.5px 8px;
+            font-size: 20px;
+            line-height: 100%;
+            font-weight: 500;
+            background-color: #efe41a;
+            border-radius: 20px;
+        }
+
+        .h2-title{
+            margin: 0 0 28px;
+        }
+        .why{
+            display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        }
+        .why div{
+            display: inline-block
+        }
+        .why > .left{
+            max-width: 730px;
+            margin-right: 20px;
+            display: inline-block;
+        }
+        .list{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 40px 23.5px;
+            max-width: max-content;
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="images/logoandname.png" alt="logo" height="64" class="logo">
+        </div>
+        <div class="header-right">
+            <a class = "btn" href=""><span >Заполнить анкету</span></a>
+            <img src="images/work.png" alt="work">
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="h">
+        <h1 class = "title">Для нас важен каждый</h1>
+        <img src="images/slogan_1784115660.svg" alt="slogan">
+        </div>
+        <div class="p">
+            <p>Людям нравится работать, когда они чувствуют свою ценность. В большой компании человек может теряться, чувствовать себя менее значимым.</p>
+            <br>
+            <p>Мы в Додо уверены: чем больше компания, тем больше внимания должно быть к тем, кто с ней работает.</p>
+        </div>
+    </div>
+
+    <div class="mb" >
+        <h2 class="subtitle">5 личных видео-историй о Додо изнутри</h2>
+    </div>
+
+    <div class="workplaces">
+        <h2 class="h2-title">Кем можно быть в пиццерии</h2>
+        <p>Ищем тех, кто хочет приходить к нам с удовольствием каждый день. Присоединяйтесь!</p>
+        <div class="profecion" style="width: max-content;">
+            <article>
+                <img src="images/pos1_805a0ff652.png" alt="">
+                <div><h3>Курьер</h3></div>
+            </article>
+            <article>
+                <img src="images/pos2_dac3f8e2ff.png" alt="">
+                <div><h3>Кассир</h3></div>
+            </article>
+            <article>
+                <img src="images/pos3_305a98c676.png" alt="">
+                <div><h3>Пиццамейкер</h3></div>
+            </article>
+            <article>
+                <img src="images/pos4_5fa68f4d3e.png" alt="">
+                <div><h3>Клинер</h3></div>
+            </article>
+            <article>
+                <img src="images/pos5_94b46de958.png" alt="">
+                <div><h3>Менеджер</h3></div>
+            </article>
+            <article>
+                <img src="images/pos6_ac14836af1.png" alt="">
+                <div><h3>Заместитель управляющего</h3></div>
+            </article>
+            <article>
+                <img src="images/pos7_f9e0aff104.png" alt="">
+                <div><h3>Управляющий</h3></div>
+            </article>
+        </div>
+    </div>
+    <div class="why">
+        <div class="left">
+            <h2>Почему людям нравится работать в Додо?</h2>
+            <p>Додо Пицца — международная сеть пиццерий родом из Сыктывкара. Мы уже открыли более 800 пиццерий в 17 странах и продолжаем открывать новые.
+                <br><br>
+                Обычно люди приходят в Додо, чтобы просто поесть или отдохнуть. Именно команда пиццерии делает их опыт незабываемым: создает атмосферу уюта, готовит и доставляет ароматную пиццу.
+                <br><br>
+                Чтобы команда дарила радость сотням клиентов, мы уделяем внимание ее комфорту.
+            </p>
+
+        </div>
+        <ul class="list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+</body>
+</html>
